@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/@panzoom/panzoom@4.4.1/dist/panzoom.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<html>
+  <body>
+    <div id="slider" class="slider">
+      <div class="wrapper">
+        <!-- Slide -->
+        <div id="items" class="items">
+          <div class="slide">
+            <img
+              src="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Xnp34BxXMlhmBUhPHK8d/pub/7BgkoFY8yNjVhu1uGZm1.jpg"
+              alt=""
+              id="0"
+              class="myImg"
+            />
+            <div class="text">image 1</div>
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/CXyTWOyiEaYVlDjgVh3t/pub/2J1BXVx3hAQ2FPEjC6FH.png"
+              alt=""
+              id="1"
+              class="myImg"
+            />
+            <div class="text">image 2</div>
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/CXyTWOyiEaYVlDjgVh3t/pub/m1HuhKbZusH5u1furjhn.png"
+              alt=""
+              id="2"
+              class="myImg"
+            />
+            <div class="text">image 3</div>
+          </div>
+        </div>
+
+        <!-- Previous, Next -->
+        <a id="prev" class="control prev">&nbsp;&nbsp;&#10094;</a>
+        <a id="next" class="control next">&#10095;&nbsp;&nbsp;</a>
+
+        <!-- dot -->
+        <div class="dotAll">
+          <span class="dot" onclick="showSlides(0)"></span>
+          <span class="dot" onclick="showSlides(1)"></span>
+          <span class="dot" onclick="showSlides(2)"></span>
+        </div>
+
+        <!-- thumbnail -->
+        <div class="head">
+          <div class="thumbnail">
+            <span>
+              <img
+                class="thumbnailImg"
+                src="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/Xnp34BxXMlhmBUhPHK8d/pub/7BgkoFY8yNjVhu1uGZm1.jpg"
+                alt=""
+                onclick="showSlides(0)"
+              />
+            </span>
+
+            <span>
+              <img
+                class="thumbnailImg"
+                src="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/CXyTWOyiEaYVlDjgVh3t/pub/2J1BXVx3hAQ2FPEjC6FH.png"
+                alt=""
+                onclick="showSlides(1)"
+              />
+            </span>
+
+            <span>
+              <img
+                class="thumbnailImg"
+                src="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/CXyTWOyiEaYVlDjgVh3t/pub/m1HuhKbZusH5u1furjhn.png"
+                alt=""
+                onclick="showSlides(2)"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
